@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Abhishek | Data Analyst Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f5f7fa;--card:#fff;--text:#17202a;--muted:#667085;--line:#e5e7eb;--accent:#2563eb}
+*{box-sizing:border-box;scroll-behavior:smooth}
+body{margin:0;font-family:Inter,Arial,sans-serif;background:var(--bg);color:var(--text);line-height:1.6}
+a{text-decoration:none;color:inherit}
+.nav{position:sticky;top:0;z-index:10;background:rgba(255,255,255,.94);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.nav-inner{max-width:1100px;margin:auto;padding:16px 24px;display:flex;align-items:center;justify-content:space-between}
+.logo{font-size:22px;font-weight:800}.logo span{color:var(--accent)}
+.nav-links{display:flex;gap:22px;font-size:14px;font-weight:600}.nav-links a:hover{color:var(--accent)}
+.hero{max-width:1100px;margin:auto;padding:90px 24px 65px;display:grid;grid-template-columns:1.5fr 1fr;gap:50px;align-items:center}
+.badge{display:inline-block;padding:7px 12px;border-radius:999px;background:#eaf1ff;color:var(--accent);font-size:13px;font-weight:700}
+h1{font-size:clamp(42px,7vw,72px);line-height:1.02;margin:18px 0}h1 span{color:var(--accent)}
+.hero p{font-size:18px;color:var(--muted);max-width:680px}
+.buttons{display:flex;gap:12px;margin-top:28px;flex-wrap:wrap}
+.btn{padding:12px 18px;border-radius:10px;font-weight:700;border:1px solid var(--line);background:white;display:inline-block}
+.btn.primary{background:var(--accent);color:#fff;border-color:var(--accent)}
+.profile-card,.card{background:var(--card);border:1px solid var(--line);border-radius:16px}
+.profile-card{padding:28px;box-shadow:0 15px 40px rgba(16,24,40,.07)}
+.contact{display:grid;gap:12px;color:var(--muted);font-size:14px}.contact strong{color:var(--text)}
+section{max-width:1100px;margin:auto;padding:65px 24px}
+.section-title{font-size:30px;margin:0 0 8px}.section-sub{color:var(--muted);margin-top:0}
+.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+.card{padding:24px}.card h3{margin:0 0 5px}.meta{color:var(--muted);font-size:13px}.card ul{padding-left:20px}
+.project{transition:.2s}.project:hover{transform:translateY(-4px);box-shadow:0 12px 30px rgba(16,24,40,.08)}
+.project-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:20px}
+.project-btn{padding:9px 13px;border-radius:8px;border:1px solid var(--line);font-size:13px;font-weight:700}
+.project-btn.github{background:#111827;color:#fff;border-color:#111827}
+.project-btn.live{background:var(--accent);color:#fff;border-color:var(--accent)}
+.skills{display:flex;flex-wrap:wrap;gap:10px}.skill{padding:9px 13px;background:white;border:1px solid var(--line);border-radius:9px;font-size:14px;font-weight:600}
+footer{border-top:1px solid var(--line);background:white;text-align:center;padding:28px 20px;color:var(--muted);font-size:14px}
+@media(max-width:800px){.hero{grid-template-columns:1fr;padding-top:60px}.grid{grid-template-columns:1fr}.nav-links{display:none}}
+</style>
+</head>
+<body>
+<nav class="nav"><div class="nav-inner">
+<a class="logo" href="#home">ABHISHEK<span>.</span></a>
+<div class="nav-links"><a href="#about">About</a><a href="#experience">Experience</a><a href="#projects">Projects</a><a href="#skills">Skills</a><a href="#contact">Contact</a></div>
+</div></nav>
+
+<main>
+<section class="hero" id="home">
+<div>
+<span class="badge">Data Analyst • Machine Learning Enthusiast</span>
+<h1>Turning data into <span>useful insights.</span></h1>
+<p>Aspiring Data Analyst and Machine Learning enthusiast with a strong foundation in Python, SQL, predictive modeling, exploratory data analysis and visualization.</p>
+<div class="buttons">
+<a class="btn primary" href="#projects">View Projects</a>
+<a class="btn" href="#contact">Contact Me</a>
+<a class="btn" href="https://github.com/3986abhishek" target="_blank" rel="noopener">GitHub</a>
+<a class="btn" href="https://linkedin.com/in/abhishek-alblh3" target="_blank" rel="noopener">LinkedIn</a>
+</div>
+</div>
+<div class="profile-card"><h3>Quick Profile</h3><div class="contact">
+<div><strong>Education:</strong> B.Tech in Computer Science Engineering</div>
+<div><strong>University:</strong> Sant Baba Bhag Singh University</div>
+<div><strong>CGPA:</strong> 8.6 / 10</div>
+<div><strong>Location:</strong> Punjab, India</div>
+<div><strong>Focus:</strong> Data Analytics, ML & Power BI</div>
+<div><strong>Email:</strong> abhishekk71149@gmail.com</div>
+</div></div>
+</section>
+
+<section id="about"><h2 class="section-title">About Me</h2>
+<p class="section-sub">I enjoy cleaning real-world datasets, discovering patterns, building dashboards, and applying machine learning to practical prediction problems.</p></section>
+
+<section id="experience"><h2 class="section-title">Work Experience</h2><div class="grid">
+<article class="card"><h3>Tech CAD</h3><div class="meta">Data Analyst Intern • On-site • Jun 2025 – Jul 2025</div>
+<ul><li>Cleaned and analyzed 5,000+ records, improving data accuracy by 20% through preprocessing.</li><li>Designed 3 interactive Power BI dashboards using DAX, data modeling, and KPI tracking.</li></ul></article>
+<article class="card"><h3>Cyber Core Technologies</h3><div class="meta">Data Science Intern • On-site • Jun 2026 – Jul 2026</div>
+<ul><li>Cleaned and preprocessed datasets using Python and Pandas and performed exploratory data analysis.</li><li>Created visualizations and applied machine learning techniques to identify trends and develop predictive models.</li></ul></article>
+</div></section>
+
+<section id="projects"><h2 class="section-title">Projects</h2>
+<p class="section-sub">Click <b>GitHub</b> to view the project source. Live Demo buttons are included only when a real public website is available.</p>
+<div class="grid">
+
+<article class="card project"><h3>House Price Prediction</h3>
+<ul><li>Cleaned housing data, handled missing values and outliers, and performed exploratory data analysis.</li><li>Built and evaluated a regression model to predict house prices using key property features.</li></ul>
+<div class="project-actions">
+<a class="project-btn github" href="https://github.com/3986abhishek/house-prediction-model" target="_blank" rel="noopener">GitHub ↗</a>
+<a class="project-btn live" href="https://houseprp.onrender.com" target="_blank" rel="noopener">Live Demo ↗</a>
+</div></article>
+
+<article class="card project"><h3>Customer Churn Prediction</h3>
+<ul><li>Performed data preprocessing and exploratory analysis to identify customer characteristics associated with churn.</li><li>Built and evaluated classification models to predict churn and identify important customer features.</li></ul>
+<div class="project-actions">
+<a class="project-btn github" href="https://github.com/3986abhishek/customer-churn-prediction" target="_blank" rel="noopener">GitHub ↗</a>
+<a class="project-btn live" href="https://customer-churn-prediction-gxls.onrender.com" target="_blank" rel="noopener">Live Demo ↗</a>
+</div></article>
+
+<article class="card project"><h3>Air Quality Analysis and Prediction</h3>
+<ul><li>Analyzed AQI and pollutant data to identify trends, pollution patterns and relationships among pollutants.</li><li>Performed EDA and feature analysis and developed machine learning models for AQI prediction.</li></ul>
+<div class="project-actions">
+<a class="project-btn github" href="https://github.com/3986abhishek/Air-quality-predection-and-analysis" target="_blank" rel="noopener">GitHub ↗</a>
+</div></article>
+
+<article class="card project"><h3>Air Quality Power BI Dashboard</h3>
+<ul><li>Cleaned and transformed air quality data using Python and Pandas for dashboard development.</li><li>Created an interactive Power BI dashboard with KPIs, pollutant trends, filters and visual insights.</li></ul>
+<div class="project-actions">
+<a class="project-btn github" href="https://github.com/3986abhishek/power-bi-air-quality-project" target="_blank" rel="noopener">GitHub ↗</a>
+</div></article>
+
+<article class="card project"><h3>COVID-19 Power BI Dashboard</h3>
+<ul><li>Analyzed COVID-19 data to identify case, recovery and time-based trends.</li><li>Built an interactive Power BI dashboard using KPIs, charts and filters.</li></ul>
+<div class="project-actions">
+<a class="project-btn github" href="https://github.com/3986abhishek/power-bi-covid-19-dashboard" target="_blank" rel="noopener">GitHub ↗</a>
+</div></article>
+
+</div></section>
+
+<section id="skills"><h2 class="section-title">Technical Skills</h2><div class="skills">
+<span class="skill">Python</span><span class="skill">SQL</span><span class="skill">C++</span><span class="skill">HTML</span><span class="skill">CSS</span><span class="skill">Pandas</span><span class="skill">NumPy</span><span class="skill">Matplotlib</span><span class="skill">Seaborn</span><span class="skill">EDA</span><span class="skill">Power BI</span><span class="skill">Excel</span><span class="skill">DAX</span><span class="skill">Scikit-learn</span><span class="skill">Regression</span><span class="skill">Classification</span><span class="skill">Random Forest</span><span class="skill">Git</span><span class="skill">GitHub</span><span class="skill">Jupyter Notebook</span><span class="skill">VS Code</span>
+</div></section>
+
+<section id="contact"><h2 class="section-title">Let's Connect</h2><p class="section-sub">Open to Data Analyst, Data Science and internship opportunities.</p>
+<div class="buttons"><a class="btn primary" href="mailto:abhishekk71149@gmail.com">Email Me</a><a class="btn" href="https://linkedin.com/in/abhishek-alblh3" target="_blank" rel="noopener">LinkedIn</a><a class="btn" href="https://github.com/3986abhishek" target="_blank" rel="noopener">GitHub</a></div></section>
+</main>
+<footer>© 2026 Abhishek. Built as a personal resume portfolio.</footer>
+</body>
+</html>
